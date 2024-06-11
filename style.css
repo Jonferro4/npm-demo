@@ -1,0 +1,131 @@
+.crossed-out {
+    text-decoration: line-through;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    color: #333;
+    
+    
+}
+
+
+li::before {
+    
+    color: #2e8b57;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+
+li:hover {
+    background: #f0f8ff;
+    color: #2e8b57;
+}
+
+
+.crossed-out {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+
+li:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+li:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: none;
+}
+
+
+
+.center{
+  text-align: center;
+} 
+
+#userInput{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    width: 600px;
+    height: 50px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 5px;
+    
+}
+
+
+#background-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (max-width: 750px) {
+  #background-video { display: none; }
+  body {
+    background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+
+
+
+
+
+
+input[type="text"] {
+    display: block;
+    width: calc(100% - 40px); 
+    padding: 15px 20px;
+    margin: 20px auto;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, color 0.3s ease;
+    color: #333;
+    font-size: 1em;
+}
+
+input[type="text"]:hover, input[type="text"]:focus {
+    background: #f0f8ff;
+    color: #000000;
+    outline: none;
+    border-color: #000000;
+}

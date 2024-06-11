@@ -1,32 +1,51 @@
+<!-- 
+- Users should be able to view all of the to-do tasks
+- Users should be able to add a to-do to the list of to-do tasks
+- Users should be able to mark a task as completed by crossing it out on click
+- Users should be able to remove to-do tasks by removing those elements from the DOM
+- The page should be aesthetically pleasing (aka be styled)
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
     <title>Sample</title>
+    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+    </video>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Web Page</h1>
+        <h1>To do list</h1>
     </header>
 
     <section>
-        <h2>To do list</h2>
+        <h2></h2>
         <ul id="myList">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
+            <li>Fold laundy</li>
+            <li>Vacuum Living room</li>
+            <li>Make Bed</li>
         </ul>
     </section>
 
     <section>
-        <h2>My Form</h2>
+        <h2></h2>
         <form id="myForm">
-            <label for="inputField">Enter something:</label>
-            <input type="text" id="inputField" name="inputField">
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
+            <div class="center">
+            <label for="userInput"></label>
+            <input type="text" id="userInput" name="userInput"  placeholder="Enter To do Task:">
+            <br>
+                <div>
+                    <button type="button" onclick="addItem()" id="Submit">Submit</button>
+                    <button type="reset" id="Reset">Reset</button>
+                    <button type="button" onclick="removeItem()" id="Remove">Remove</button>
+                </div>
+            </div>
         </form>
     </section>
+    <script type = "text/javascript" src="npmdemo.js"></script>
 </body>
 </html>

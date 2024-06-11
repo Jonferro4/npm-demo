@@ -1,15 +1,25 @@
 {
-  "name": "npm-init-demo",
-  "version": "0.0.1",
-  "description": "working node application",
-  "main": "npmdemo.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    "start": "live-server .",
-  },
-  "author": "Jonathan",
-  "license": "ISC",
+  
   "dependencies": {
     "live-server": "^1.2.2"
-  }
+  },
+  "name": "npm-demo",
+  "version": "0.0.0",
+  "description": "NPM to do list demo",
+  "main": "npmdemo.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "live-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonferro4/npm-demo.git"
+  },
+  "author": "Jonathan Ferro and Zach Falter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jonferro4/npm-demo/issues"
+  },
+  "homepage": "https://github.com/Jonferro4/npm-demo#readme"
 }
