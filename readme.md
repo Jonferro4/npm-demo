@@ -1,4 +1,4 @@
-# To do list piar programming project
+# To do list pair programming project
 
 This repository contains the necessary components for a working to do list website
 
